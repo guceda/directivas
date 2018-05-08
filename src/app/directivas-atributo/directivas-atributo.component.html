@@ -1,0 +1,14 @@
+<p [ngStyle]="paramStyles">
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea atque possimus inventore totam odit cumque non consequatur ducimus. Mollitia ea, maxime nemo accusantium harum alias veritatis consectetur officiis natus ut.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto debitis explicabo dolores labore maxime unde id minima obcaecati animi dolor, nulla deserunt voluptate facere iure ipsam quia, perspiciatis non est?
+</p>
+
+<button (click) = "handleClick('tomato')">Rojo</button>
+<button (click) = "handleClick('lightgreen')">Verde</button>
+<button (click) = "handleClick('lightblue')">Azul</button>
+
+
+<p  (mouseover) = "onMouse(true)"  (mouseout) = "onMouse(false)" [ngClass]="{'texto-verde':mouseChange, 'grande':true}">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo maiores, eum voluptas molestiae fugit iste, eligendi delectus, at quia accusantium vel obcaecati quos error doloremque. Pariatur sed voluptatum deleniti.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quidem sint odio quia temporibus laudantium harum totam perferendis illo, ut iure necessitatibus, corporis quasi, tempore adipisci nihil aperiam repellendus? Suscipit.
+</p>

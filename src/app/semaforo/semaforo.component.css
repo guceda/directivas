@@ -1,0 +1,29 @@
+
+.semaforo{
+    margin: 40px;
+    background: lightsalmon;
+    width: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.semaforo div{
+    border-radius: 50%;
+    width: 50px;
+    height:50px;
+    margin-bottom: 10px;
+    border: 5px solid grey;
+    background-color: black;
+}
+
+.rojo{
+    background-color: red!important;
+}
+
+.amarillo{
+    background-color: yellow!important;
+}
+
+.verde{
+    background-color: green!important;
+}

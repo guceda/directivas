@@ -1,0 +1,14 @@
+<ul>
+  <li *ngFor = "let pers of lista; let i=index; let f=first; let e=even" [ngClass]= "{'primero':f, 'par':e}">
+    {{pers.nombre}} {{pers.apellidos}}
+    <ol>
+      <li  *ngFor="let asignatura of pers.asignaturas">{{asignatura}}</li>
+    </ol>
+  </li>
+</ul>
+<form>
+  <input type="text" name= "nombre" [(ngModel)] = "formulario.nombre">
+  <input type="text" name= "apellidos" [(ngModel)] = "formulario.apellidos">
+  <input type="number" name= "edad" [(ngModel)] = "formulario.edad">
+  <button (click)= "handleClick()">Enviar</button>
+</form>

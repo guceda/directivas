@@ -1,0 +1,7 @@
+<div>
+  <app-directivas-atributo></app-directivas-atributo>
+  <button (click) = " handleClick()" >mostrar/no mostrar</button>
+  <app-semaforo *ngIf = "mostrarSemaforo; else textoCompOculto"></app-semaforo>
+  <ng-template #textoCompOculto> El componente está oculto</ng-template>
+  <app-lista-personas></app-lista-personas>
+</div>
